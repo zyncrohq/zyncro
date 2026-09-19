@@ -1,0 +1,57 @@
+{
+  "name": "@zyncro/embed",
+  "version": "1.0.0",
+  "description": "Official Zyncro JavaScript Embed SDK for embedding booking calendars, scheduling modals, and floating launchers into any website.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:types": "tsc -p tsconfig.json",
+    "build:esm": "esbuild src/index.ts --bundle --minify --format=esm --outfile=dist/index.mjs",
+    "build:cjs": "esbuild src/index.ts --bundle --minify --format=cjs --outfile=dist/index.cjs",
+    "build:iife": "esbuild src/index.ts --bundle --minify --format=iife --global-name=ZyncroSDK --outfile=dist/embed.js",
+    "build": "npm run build:types && npm run build:esm && npm run build:cjs && npm run build:iife",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyncrohq/zyncro.git",
+    "directory": "packages/zyncro-embed"
+  },
+  "bugs": {
+    "url": "https://github.com/zyncrohq/zyncro/issues"
+  },
+  "keywords": [
+    "zyncro",
+    "booking",
+    "scheduling",
+    "calendar",
+    "booking-widget",
+    "scheduling-widget",
+    "embed",
+    "calendar-embed",
+    "meeting-scheduling",
+    "appointment-booking",
+    "javascript-sdk",
+    "typescript",
+    "react-booking",
+    "nextjs-booking"
+  ],
+  "author": "Zyncro Infotech Private Limited <support@zyncro.in>",
+  "license": "MIT",
+  "homepage": "https://zyncro.in"
+}

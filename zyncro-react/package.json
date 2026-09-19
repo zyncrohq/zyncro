@@ -1,0 +1,18 @@
+{
+  "name": "@zyncro/react",
+  "version": "0.0.3",
+  "description": "Official React component library for Zyncro scheduling embed & buttons.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyncrohq/zyncro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyncrohq/zyncro/issues"
+  },
+  "keywords": ["zyncro", "react", "calendar", "widget", "scheduling", "booking", "embed"],
+  "author": "Zyncro Infotech Private Limited <support@zyncro.in>",
+  "license": "MIT",
+  "homepage": "https://zyncro.in"
+}

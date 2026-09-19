@@ -1,0 +1,29 @@
+{
+  "name": "create-zyncro-app",
+  "version": "0.0.2",
+  "description": "Bootstrap a new Zyncro integration, booking app, or starter project in seconds.",
+  "main": "index.js",
+  "bin": {
+    "create-zyncro-app": "./bin/create-zyncro-app.js"
+  },
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyncrohq/zyncro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyncrohq/zyncro/issues"
+  },
+  "keywords": [
+    "zyncro",
+    "create-zyncro-app",
+    "calendar",
+    "scheduling",
+    "booking",
+    "starter",
+    "scaffolding"
+  ],
+  "author": "Zyncro Infotech Private Limited <support@zyncro.in>",
+  "license": "MIT",
+  "homepage": "https://zyncro.in"
+}

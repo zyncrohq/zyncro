@@ -1,0 +1,28 @@
+{
+  "name": "@zyncro/sdk",
+  "version": "0.0.3",
+  "description": "Official Zyncro SDK and developer tools for scheduling, calendar sync, and analytics.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyncrohq/zyncro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zyncrohq/zyncro/issues"
+  },
+  "keywords": [
+    "zyncro",
+    "calendar",
+    "scheduling",
+    "booking",
+    "mcp",
+    "analytics"
+  ],
+  "author": "Zyncro Infotech Private Limited <support@zyncro.in>",
+  "license": "MIT",
+  "homepage": "https://zyncro.in"
+}
