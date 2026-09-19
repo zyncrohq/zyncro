@@ -11,8 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@zyncro/react"><img src="https://img.shields.io/npm/v/@zyncro/react?style=flat-square&color=6366f1" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@zyncro/react"><img src="https://img.shields.io/npm/dm/@zyncro/react?style=flat-square&color=10b981" alt="npm downloads" /></a>
+  <img src="https://img.shields.io/badge/status-coming--soon-amber?style=flat-square" alt="Status: Coming Soon" />
   <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18%20%7C%2019-61dafb?style=flat-square" alt="React 18 & 19" /></a>
   <a href="https://github.com/zyncrohq/zyncro"><img src="https://img.shields.io/badge/github-zyncrohq%2Fzyncro-181717?style=flat-square&logo=github" alt="GitHub" /></a>
   <a href="https://zyncro.in"><img src="https://img.shields.io/badge/website-zyncro.in-0ea5e9?style=flat-square" alt="Website" /></a>
@@ -21,7 +20,12 @@
 
 ---
 
-## ⚡ Features
+> 🚧 **Status: Under Active Development — Coming Soon**  
+> `@zyncro/react` is currently in active development.  
+> You can embed Zyncro into any React or Next.js app today using the production-ready [`@zyncro/embed`](../zyncro-embed) package (see the [React Integration Guide in @zyncro/embed](../zyncro-embed#3-react--nextjs-integration-example)).
+
+---
+
 
 - 📅 **Inline Calendar Component**: Seamlessly embed your personal or team booking page directly into your webpage layout.
 - 🔘 **Popup Modal Button**: Trigger high-converting booking modals with a single click.

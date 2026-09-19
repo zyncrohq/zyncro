@@ -21,16 +21,17 @@
 
 ## 📦 Packages in this Monorepo
 
-This repository contains all public, open-source client-facing libraries and tooling built for the Zyncro scheduling ecosystem:
+> 💡 **Release Status:** Currently, **[`@zyncro/embed`](./zyncro-embed)** is fully production-ready (`v1.0.0`) and available for integrating into any website or application. All other packages listed below are under active development and marked as `🟡 Coming Soon`.
 
 | Package | Status | Description | Directory |
 | :--- | :---: | :--- | :--- |
-| **[`@zyncro/embed`](./zyncro-embed)** | `v1.0.0` | Zero-dependency universal JS/TS embed engine for inline calendars, popups, and floating CTA launchers (~7KB gzipped). | [`/zyncro-embed`](./zyncro-embed) |
-| **[`@zyncro/react`](./zyncro-react)** | `v1.0.0` | Official React wrapper components (`<ZyncroEmbed />`, `<ZyncroModalButton />`, `useZyncro` hook). | [`/zyncro-react`](./zyncro-react) |
-| **[`@zyncro/sdk`](./zyncro-sdk)** | `v1.0.0` | Official TypeScript / Node.js API client for interacting with the Zyncro REST API. | [`/zyncro-sdk`](./zyncro-sdk) |
-| **[`create-zyncro-app`](./create-zyncro-app)** | `v1.0.0` | CLI scaffolding tool to quickly generate pre-configured scheduling web applications. | [`/create-zyncro-app`](./create-zyncro-app) |
-| **[`zyncro-cli`](./zyncro-cli)** | `v1.0.0` | Command line interface for developer operations, webhooks testing, and API keys management. | [`/zyncro-cli`](./zyncro-cli) |
-| **[`zyncro-mcp`](./zyncro-mcp)** | `v1.0.0` | Model Context Protocol (MCP) server connecting AI agents (Claude, Cursor, Antigravity) to Zyncro scheduling. | [`/zyncro-mcp`](./zyncro-mcp) |
+| **[`@zyncro/embed`](./zyncro-embed)** | `🟢 Production (v1.0.0)` | Zero-dependency universal JS/TS embed engine for inline calendars, popups, and floating CTA launchers (~7KB gzipped). | [`/zyncro-embed`](./zyncro-embed) |
+| **[`@zyncro/react`](./zyncro-react)** | `🟡 Coming Soon` | Official React wrapper components (`<ZyncroEmbed />`, `<ZyncroModalButton />`, `useZyncro` hook). | [`/zyncro-react`](./zyncro-react) |
+| **[`@zyncro/sdk`](./zyncro-sdk)** | `🟡 Coming Soon` | Official TypeScript / Node.js API client for interacting with the Zyncro REST API. | [`/zyncro-sdk`](./zyncro-sdk) |
+| **[`create-zyncro-app`](./create-zyncro-app)** | `🟡 Coming Soon` | CLI scaffolding tool to quickly generate pre-configured scheduling web applications. | [`/create-zyncro-app`](./create-zyncro-app) |
+| **[`zyncro-cli`](./zyncro-cli)** | `🟡 Coming Soon` | Command line interface for developer operations, webhooks testing, and API keys management. | [`/zyncro-cli`](./zyncro-cli) |
+| **[`zyncro-mcp`](./zyncro-mcp)** | `🟡 Coming Soon` | Model Context Protocol (MCP) server connecting AI agents (Claude, Cursor, Antigravity) to Zyncro scheduling. | [`/zyncro-mcp`](./zyncro-mcp) |
+
 
 ---
 

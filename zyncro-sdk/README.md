@@ -11,12 +11,17 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@zyncro/sdk"><img src="https://img.shields.io/npm/v/@zyncro/sdk?style=flat-square&color=6366f1" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/@zyncro/sdk"><img src="https://img.shields.io/npm/dm/@zyncro/sdk?style=flat-square&color=10b981" alt="npm downloads" /></a>
+  <img src="https://img.shields.io/badge/status-coming--soon-amber?style=flat-square" alt="Status: Coming Soon" />
   <a href="https://github.com/zyncrohq/zyncro"><img src="https://img.shields.io/badge/types-TypeScript-blue?style=flat-square" alt="TypeScript" /></a>
   <a href="https://zyncro.in"><img src="https://img.shields.io/badge/website-zyncro.in-0ea5e9?style=flat-square" alt="Website" /></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License" /></a>
 </p>
+
+---
+
+> 🚧 **Status: Under Active Development — Coming Soon**  
+> `@zyncro/sdk` is currently in development and will be published in an upcoming release.  
+> If you need to integrate Zyncro booking calendar popups, modals, or inline widgets into your web app today, use the production-ready [`@zyncro/embed`](../zyncro-embed) package.
 
 ---
 

@@ -11,12 +11,17 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/create-zyncro-app"><img src="https://img.shields.io/npm/v/create-zyncro-app?style=flat-square&color=6366f1" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/create-zyncro-app"><img src="https://img.shields.io/npm/dm/create-zyncro-app?style=flat-square&color=10b981" alt="npm downloads" /></a>
+  <img src="https://img.shields.io/badge/status-coming--soon-amber?style=flat-square" alt="Status: Coming Soon" />
   <a href="https://github.com/zyncrohq/zyncro"><img src="https://img.shields.io/badge/github-zyncrohq%2Fzyncro-181717?style=flat-square&logo=github" alt="GitHub" /></a>
   <a href="https://zyncro.in"><img src="https://img.shields.io/badge/website-zyncro.in-0ea5e9?style=flat-square" alt="Website" /></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-purple?style=flat-square" alt="License" /></a>
 </p>
+
+---
+
+> 🚧 **Status: Under Active Development — Coming Soon**  
+> `create-zyncro-app` scaffolding CLI is currently in active development.  
+> To integrate scheduling into your existing website or web app today, check out the production-ready [`@zyncro/embed`](../zyncro-embed) package.
 
 ---
 
