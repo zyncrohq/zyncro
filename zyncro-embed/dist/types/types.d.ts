@@ -16,7 +16,7 @@ export interface EmbedPrefill {
     /** Pre-selected booking date in YYYY-MM-DD format */
     date?: string;
     /** Custom booking questions and answers */
-    [customField: string]: any;
+    [customField: string]: string | number | boolean | undefined;
 }
 export interface BaseEmbedOptions {
     /**

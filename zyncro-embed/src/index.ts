@@ -8,7 +8,15 @@
 
 import { mountInline, unmountInline } from "./core/iframe";
 import { messageBus } from "./core/message-bus";
-import { buildEmbedUrl, getGlobalOrigin, setGlobalOrigin } from "./core/url-builder";
+import {
+  buildEmbedUrl,
+  getGlobalColor,
+  getGlobalOrigin,
+  getGlobalTheme,
+  setGlobalColor,
+  setGlobalOrigin,
+  setGlobalTheme,
+} from "./core/url-builder";
 import { initAutoScanner, scan } from "./dom/scanner";
 import {
   FloatingButtonOptions,
@@ -31,11 +39,17 @@ export const Zyncro: ZyncroSDK = {
 
   /**
    * Initialize global SDK configuration.
-   * Optional: Required only when self-hosting or pointing to a custom Zyncro origin.
+   * Optional: Use to configure default origin, global brand color, or global theme.
    */
   init(config?: ZyncroGlobalConfig): void {
     if (config?.origin) {
       setGlobalOrigin(config.origin);
+    }
+    if (config?.theme) {
+      setGlobalTheme(config.theme);
+    }
+    if (config?.color) {
+      setGlobalColor(config.color);
     }
     scan();
   },

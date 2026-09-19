@@ -3,11 +3,13 @@
  * Safely normalizes, validates, and builds embed iframe URLs with prefill & theme parameters.
  */
 
-import { BaseEmbedOptions } from "../types";
+import { BaseEmbedOptions, EmbedTheme } from "../types";
 
 export const DEFAULT_ORIGIN = "https://zyncro.in";
 
 let globalDefaultOrigin = DEFAULT_ORIGIN;
+let globalDefaultTheme: EmbedTheme | undefined = undefined;
+let globalDefaultColor: string | undefined = undefined;
 
 const RESERVED_PARAMS = new Set([
   "embed",
@@ -39,8 +41,26 @@ export function getGlobalOrigin(): string {
   return globalDefaultOrigin;
 }
 
+export function setGlobalTheme(theme?: EmbedTheme): void {
+  globalDefaultTheme = theme;
+}
+
+export function getGlobalTheme(): EmbedTheme | undefined {
+  return globalDefaultTheme;
+}
+
+export function setGlobalColor(color?: string): void {
+  globalDefaultColor = color;
+}
+
+export function getGlobalColor(): string | undefined {
+  return globalDefaultColor;
+}
+
 export function resetGlobalOrigin(): void {
   globalDefaultOrigin = DEFAULT_ORIGIN;
+  globalDefaultTheme = undefined;
+  globalDefaultColor = undefined;
 }
 
 
@@ -94,13 +114,15 @@ export function buildEmbedUrl(rawUrl: string, options: Partial<BaseEmbedOptions>
     finalUrl.searchParams.set("embed", "1");
 
     // 2. Strict Theme Validation ('light' | 'dark' only)
-    if (options.theme === "light" || options.theme === "dark") {
-      finalUrl.searchParams.set("theme", options.theme);
+    const effectiveTheme = options.theme || globalDefaultTheme;
+    if (effectiveTheme === "light" || effectiveTheme === "dark") {
+      finalUrl.searchParams.set("theme", effectiveTheme);
     }
 
     // 3. Brand color (hex only: #fff, #7c3aed, #7c3aedff)
-    if (options.color && /^#([0-9a-fA-F]{3,4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/.test(options.color)) {
-      finalUrl.searchParams.set("primaryColor", options.color);
+    const effectiveColor = options.color || globalDefaultColor;
+    if (effectiveColor && /^#([0-9a-fA-F]{3,4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/.test(effectiveColor)) {
+      finalUrl.searchParams.set("primaryColor", effectiveColor);
     }
 
     // 4. Prefill data with reserved parameter protection
